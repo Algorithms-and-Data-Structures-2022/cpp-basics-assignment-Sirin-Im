@@ -113,7 +113,7 @@ namespace assignment {
       os << "Invalid argument: k\n";
       return;
     }
-    for (int i = k; i < length; i += k) {
+    for (int i = 0; i < length; i += k) {
       os << arr[i] << "\t";
     }
   }
