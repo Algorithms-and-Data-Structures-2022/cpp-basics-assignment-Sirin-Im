@@ -110,18 +110,8 @@ namespace assignment {
     if (k <= 0) {
       os << "Invalid argument: k\n";
     }
-    if (k >= length) {
-      os << arr[0];
-    } else {
-      os << arr[0];
-      int counter = 1;
-      for (int i = 0; i < length; i++) {
-        if (counter * k + counter - 1 < length) {
-          os << arr[counter * k];
-          counter++;
-        }
-      }
+    for (int i = k; i < length; i += k) {
+      os << arr[i] << " ";
     }
   }
-
 }  // namespace assignment
